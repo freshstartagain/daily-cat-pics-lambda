@@ -30,7 +30,7 @@ def lambda_handler(event, context):
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             smtp.send_message(msg)
 
-        print("Done sending email!")
+        print("Done sending email!!")
     except Exception as e:
         print(f"Something went wrong caused by {e}.")
 

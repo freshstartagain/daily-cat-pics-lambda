@@ -20,8 +20,7 @@ def lambda_handler(event, context):
         msg = EmailMessage()
         msg['Subject'] = "Cat of the day!"
         msg['From'] = EMAIL_ADDRESS
-        #msg['To'] = "ekoraim@gmail.com"
-        msg['To'] = "hayslester32145@gmail.com"
+        msg['To'] = "ekoraim@gmail.com"
         
         msg.set_content(f"Here is your cat!\n{cat_image_url}")
         msg.add_alternative(f'Here is your cat!<br/><br/><img src="{cat_image_url}" width="300px">', subtype="html")
@@ -30,7 +29,7 @@ def lambda_handler(event, context):
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             smtp.send_message(msg)
 
-        print("Done sending email!!!")
+        print("Done sending email!")
     except Exception as e:
         print(f"Something went wrong caused by {e}.")
 

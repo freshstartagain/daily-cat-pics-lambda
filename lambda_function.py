@@ -3,7 +3,7 @@ import smtplib
 import requests
 from email.message import EmailMessage
 
-def lambda_function(event, context):
+def lambda_handler(event, context):
     CAT_API_URL = "https://api.thecatapi.com/v1/images/search"
     EMAIL_ADDRESS = "lslestercayabyab@gmail.com"
     EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD')

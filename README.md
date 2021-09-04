@@ -1,6 +1,6 @@
 # Daily Cat Pics
 
-A Lambda function that I created to send email daily containing cat picture for my girlfriend. I also created this to learn how to deploy lambda function via CI/CD process.
+A Lambda function that I created to send email daily containing cat picture to my girlfriend. I also created this to learn how to deploy lambda function via CI/CD process.
 
 ## Sample Email
 
